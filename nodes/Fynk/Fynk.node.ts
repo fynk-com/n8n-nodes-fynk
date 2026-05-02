@@ -100,7 +100,8 @@ export class Fynk implements INodeType {
 					{
 						name: 'Create From Template',
 						value: 'createFromTemplate',
-						description: 'Create a new document based on a template',
+						description:
+							'Create a new fynk document from a template. Ensure all dynamic field values, party details, and signatory information are confirmed before proceeding — do not create a document with missing or placeholder data.',
 						action: 'Create a document from a template',
 					},
 				],
