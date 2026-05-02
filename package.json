@@ -1,0 +1,74 @@
+{
+	"name": "n8n-nodes-fynk",
+	"version": "0.1.0",
+	"description": "n8n community node for fynk — automate contract creation, e-signing (SES, AES, QES), and document workflows for proposals, NDAs, sales contracts, and more",
+	"license": "MIT",
+	"homepage": "https://github.com/fynk-com/n8n-nodes-fynk",
+	"keywords": [
+		"n8n-community-node-package",
+		"fynk",
+		"contract",
+		"contract-management",
+		"e-signature",
+		"esignature",
+		"electronic-signature",
+		"digital-signature",
+		"document-automation",
+		"document-generation",
+		"legal",
+		"agreement",
+		"nda",
+		"proposal",
+		"signing",
+		"ses",
+		"aes",
+		"qes",
+		"qualified-electronic-signature",
+		"offer",
+		"quote",
+		"dpa",
+		"data-privacy-agreement"
+	],
+	"author": {
+		"name": "Dominik Hackl",
+		"email": "hackl@fynk.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/fynk-com/n8n-nodes-fynk.git"
+	},
+	"packageManager": "pnpm@10.33.2",
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"format": "prettier --write .",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/FynkApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/Fynk/Fynk.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "*",
+		"eslint": "9.32.0",
+		"prettier": "3.6.2",
+		"release-it": "^19.0.4",
+		"typescript": "5.9.2"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
