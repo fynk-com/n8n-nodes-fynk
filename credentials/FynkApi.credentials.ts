@@ -9,6 +9,7 @@ import type {
 export class FynkApi implements ICredentialType {
 	name = 'fynkApi';
 
+	// eslint-disable-next-line n8n-nodes-base/cred-class-field-display-name-miscased
 	displayName = 'fynk API';
 
 	icon: Icon = 'file:fynk.svg';
