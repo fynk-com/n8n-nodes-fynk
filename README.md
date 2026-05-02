@@ -4,12 +4,12 @@ This is an n8n community node for [fynk](https://fynk.com) — an AI contract ma
 
 [n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/sustainable-use-license/) workflow automation platform.
 
-[Installation](#installation)
-[Operations](#operations)
-[Credentials](#credentials)
-[Compatibility](#compatibility)
-[Usage](#usage)
-[Resources](#resources)
+[Installation](#installation) |
+[Operations](#operations) |
+[Credentials](#credentials) |
+[Compatibility](#compatibility) |
+[Usage](#usage) |
+[Resources](#resources) |
 [Version history](#version-history)
 
 ## Installation
@@ -42,7 +42,6 @@ Tested against n8n 2.18. Minimum required version is not yet established — ple
 - Trigger document signing workflows for **purchase agreements** and **sales purchase agreements** directly from your ERP or CRM
 - Capture legally binding signatures — **Simple (SES)**, **Advanced (AES)**, or **Qualified (QES)** — with a tamper-proof audit trail
 - Automate document generation for high-volume, repetitive contracts like onboarding agreements or subscription renewals
-
 
 ## Resources
 
