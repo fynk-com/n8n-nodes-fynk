@@ -48,6 +48,9 @@
 		"format": "prettier --write .",
 		"prepublishOnly": "n8n-node prerelease"
 	},
+	"publishConfig": {
+		"access": "public"
+	},
 	"files": [
 		"dist"
 	],
