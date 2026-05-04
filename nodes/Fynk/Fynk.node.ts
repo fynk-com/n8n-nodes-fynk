@@ -7,8 +7,9 @@ import type {
 	INodePropertyOptions,
 	INodeType,
 	INodeTypeDescription,
+	JsonObject,
 } from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+import { NodeApiError, NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
 
 const BASE_URL = 'https://app.fynk.com/v1/api';
 
@@ -559,7 +560,8 @@ export class Fynk implements INodeType {
 					returnData.push(...executionData);
 					continue;
 				}
-				throw error;
+				if (error instanceof NodeOperationError) throw error;
+				throw new NodeApiError(this.getNode(), error as JsonObject, { itemIndex: i });
 			}
 		}
 
